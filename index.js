@@ -26,7 +26,7 @@ class Neighborhood {
 		return [...new Set(this.deliveries().map((delivery) => delivery.mealId))]};
 }
 
-let customerId = 0 // count to start at zero
+let customerId = 0
 //class of customer
 class Customer {
 	constructor(name, neighborhoodId ={}) {
@@ -51,7 +51,7 @@ class Customer {
 			return sum + meal.price;},0);};
 }
 
-let mealId = 0 // count to start at zero
+let mealId = 0
 //class of Meal
 class Meal {
 	constructor(title, price) {
@@ -76,7 +76,7 @@ class Meal {
 		return store.meals.sort(function(m1, m2) {return m2.price - m1.price});};
 }
 
-let deliveryId = 0 // count to start at zero
+let deliveryId = 0
 //class of delivery
 class Delivery {
 	constructor(mealId=, neighborhoodId, customerId={}) {
