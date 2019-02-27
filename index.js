@@ -72,9 +72,14 @@ class Meal {
 			return delivery.customer()});
 	}
 
-	static byPrice() {
-		return store.meals.sort(function(m1, m2) {return m1.price < m2.price});};
-}
+// 	static byPrice() {
+// 		return store.meals.sort(function(m1, m2) {return m1.price < m2.price});};
+// }
+static byPrice() {
+	 return store.meals.sort((meal1, meal2) => {
+		 return meal1.price < meal2.price;
+	 });
+ }
 
 let deliveryId = 0
 
