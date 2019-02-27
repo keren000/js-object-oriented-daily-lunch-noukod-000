@@ -78,21 +78,14 @@ class Meal {
 
 let deliveryId = 0
 
-// class Delivery {
-// 	constructor(mealId, neighborhoodId, customerId) {
-// 		this.mealId = mealId;
-// 		this.neighborhoodId = neighborhoodId;
-// 		this.customerId = customerId;
-// 		this.id = ++deliveryId;
-// 		store.deliveries.push(this);
-// 	}
 class Delivery {
-  constructor(meal = {}, customer = {}) {
-    this.mealId = meal.id;
-    this.customerId = customer.id;
-    this.id = ++deliveryId;
-    store.deliveries.push(this);
-  }
+	constructor(mealId, neighborhoodId, customerId) {
+		this.mealId = mealId;
+		this.neighborhoodId = neighborhoodId;
+		this.customerId = customerId;
+		this.id = ++deliveryId;
+		store.deliveries.push(this);
+	}
 
 	meal() {
 		return store.meals.find(
