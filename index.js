@@ -48,7 +48,7 @@ class Customer {
 
 	totalSpent() {
 		return this.meals().reduce((sum, meal) => {
-			return sum + meal.price;},0);};
+			return sum + meal.price},0);};
 }
 
 let mealId = 0
