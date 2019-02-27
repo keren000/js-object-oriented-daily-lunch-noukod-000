@@ -73,7 +73,7 @@ class Meal {
 	}
 
 	static byPrice() {
-		return store.meals.sort(function(m1, m2) {return m1.price < m2.price});};
+		return store.meals.sort(function(m1, m2) {return m2.price < m1.price});};
 }
 
 let deliveryId = 0
