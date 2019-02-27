@@ -48,7 +48,7 @@ class Customer {
 
 	totalSpent() {
 		return this.meals().reduce((sum, meal) => {
-			return sum + meal.price},0);};
+			return sum + meal.price;},0);};
 }
 
 let mealId = 0
@@ -73,7 +73,7 @@ class Meal {
 	}
 
 	static byPrice() {
-		return store.meals.sort(function(m1, m2) {return m2.price > m1.price});};
+		return store.meals.sort(function(m1, m2) {return m1.price < m2.price});};
 }
 
 let deliveryId = 0
